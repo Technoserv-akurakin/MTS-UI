@@ -3,31 +3,51 @@
 </h1>
 <md-list class="full-width" class="flex-container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
   <md-card class="main-card">
-  <form class="full-width">
-    <md-input-container class="full-width">
-      <input mdInput placeholder="Сумма кредита"  [formControl]="creditAmount">
-    </md-input-container>
 
-    <md-select placeholder="Срок кредита" [formControl]="creditPeriodCtrl">
-      <md-option *ngFor="let period of creditPeriods" [value]="period.value">{{period.viewValue}}</md-option>
-    </md-select>
+    <form (ngSubmit)="submit()" class="full-width" [formGroup]="questForm">
+      <p>
+      <md-input-container class="full-width">
+        <input mdInput placeholder="Сумма кредита" formControlName="creditAmount">
+        <!--<validator-message [field]="questForm.get('creditAmount')"></validator-message>-->
+      </md-input-container>
 
+      </p>
 
-    <md-input-container class="full-width">
-      <input mdInput placeholder="Фамилия Имя Отчество" [mdAutocomplete]="auto" [formControl]="stateCtrl">
-    </md-input-container>
+      <p>
+      <md-select placeholder="Срок кредита" formControlName="creditPeriod">
+        <md-option *ngFor="let period of creditPeriods" [value]="period.value">{{period.viewValue}}</md-option>
+      </md-select>
+      </p>
+      <p>
+      <md-input-container class="full-width">
+        <input mdInput placeholder="Фамилия Имя Отчество" [mdAutocomplete]="auto" [formControl]="nameCtrl">
+      </md-input-container>
 
-    <md-autocomplete #auto="mdAutocomplete">
-      <md-option *ngFor="let state of filteredStates | async" [value]="state">{{ state }}</md-option>
-    </md-autocomplete>
+      <md-autocomplete #auto="mdAutocomplete">
+        <md-option *ngFor="let state of filteredStates | async" [value]="state">{{ state }}</md-option>
+      </md-autocomplete>
+      </p>
 
+      <p>
+        <md-input-container>
+          <input mdInput [mdDatepicker]="picker" placeholder="Дата рождения"  formControlName="birthDate">
+          <button mdSuffix [mdDatepickerToggle]="picker"></button>
+        </md-input-container>
+        <md-datepicker #picker></md-datepicker>
+      </p>
 
+      <md-input-container class="full-width">
+        <input mdInput placeholder="Дополнительный телефон" formControlName="additionalPhone">
+      </md-input-container>
 
-    <!--<md-input-container>-->
-      <!--<input mdInput [mdDatepicker]="picker" placeholder="Choose a date">-->
-      <!--<button mdSuffix [mdDatepickerToggle]="picker"></button>-->
-    <!--</md-input-container>-->
-    <!--<md-datepicker #picker></md-datepicker>-->
-  </form>
+      <p>
+        <button md-button onclick="submit">Click me!</button>
+      </p>
+    </form>
+
+    <div>Summ {{questForm.value.creditAmount}}</div>
+    <div>Period {{questForm.value.creditPeriod}}</div>
+    <div>Name {{questForm.value.name}}</div>
+
   </md-card>
 </md-list>
