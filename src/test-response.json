@@ -1,0 +1,124 @@
+{
+  "suggestions": [
+    {
+      "value": "Виктор Иванович",
+      "unrestricted_value": "Виктор Иванович",
+      "data": {
+        "surname": null,
+        "name": "Виктор",
+        "patronymic": "Иванович",
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Иванов",
+      "unrestricted_value": "Виктор Иванов",
+      "data": {
+        "surname": "Иванов",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Иванченко",
+      "unrestricted_value": "Виктор Иванченко",
+      "data": {
+        "surname": "Иванченко",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Иваненко",
+      "unrestricted_value": "Виктор Иваненко",
+      "data": {
+        "surname": "Иваненко",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Иванников",
+      "unrestricted_value": "Виктор Иванников",
+      "data": {
+        "surname": "Иванников",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Иванцов",
+      "unrestricted_value": "Виктор Иванцов",
+      "data": {
+        "surname": "Иванцов",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Иванюк",
+      "unrestricted_value": "Виктор Иванюк",
+      "data": {
+        "surname": "Иванюк",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Иванков",
+      "unrestricted_value": "Виктор Иванков",
+      "data": {
+        "surname": "Иванков",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Ивановский",
+      "unrestricted_value": "Виктор Ивановский",
+      "data": {
+        "surname": "Ивановский",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    },
+    {
+      "value": "Виктор Иванина",
+      "unrestricted_value": "Виктор Иванина",
+      "data": {
+        "surname": "Иванина",
+        "name": "Виктор",
+        "patronymic": null,
+        "gender": "MALE",
+        "source": null,
+        "qc": null
+      }
+    }
+  ]
+}

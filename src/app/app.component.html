@@ -1,0 +1,33 @@
+<h1>
+  {{title}}
+</h1>
+<md-list class="full-width" class="flex-container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <md-card class="main-card">
+  <form class="full-width">
+    <md-input-container class="full-width">
+      <input mdInput placeholder="Сумма кредита"  [formControl]="creditAmount">
+    </md-input-container>
+
+    <md-select placeholder="Срок кредита" [formControl]="creditPeriodCtrl">
+      <md-option *ngFor="let period of creditPeriods" [value]="period.value">{{period.viewValue}}</md-option>
+    </md-select>
+
+
+    <md-input-container class="full-width">
+      <input mdInput placeholder="Фамилия Имя Отчество" [mdAutocomplete]="auto" [formControl]="stateCtrl">
+    </md-input-container>
+
+    <md-autocomplete #auto="mdAutocomplete">
+      <md-option *ngFor="let state of filteredStates | async" [value]="state">{{ state }}</md-option>
+    </md-autocomplete>
+
+
+
+    <!--<md-input-container>-->
+      <!--<input mdInput [mdDatepicker]="picker" placeholder="Choose a date">-->
+      <!--<button mdSuffix [mdDatepickerToggle]="picker"></button>-->
+    <!--</md-input-container>-->
+    <!--<md-datepicker #picker></md-datepicker>-->
+  </form>
+  </md-card>
+</md-list>
